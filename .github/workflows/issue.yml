@@ -10,7 +10,7 @@ on:
 
    - opened
 
-
+permissions: write-all
 
 jobs:
 
