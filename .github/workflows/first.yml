@@ -11,4 +11,3 @@ jobs:
     run: echo Hellon from step1
     - name: another simple shell
     run: echo hello from step2
-    
