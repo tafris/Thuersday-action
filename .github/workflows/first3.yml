@@ -1,0 +1,57 @@
+name: FirstName
+
+
+
+name: FirstName
+
+
+
+on: 
+
+ workflow_dispatch: # manual way of starting workflows
+
+  
+
+jobs:
+
+ first-job:
+
+  runs-on: ubuntu-latest
+
+  steps:
+
+   - name: Simple shell command step 
+
+    run: echo Hello from Step 1
+
+   - name: Another simple shell command step 
+
+    run: echo Hello from Step 2
+
+    scheudle: 
+    - cron: 10 * * * *
+     
+
+ second-job:
+
+  runs-on: ubuntu-latest
+
+  steps:
+
+   - name: Simple shell command step 
+
+    run: echo Hello 
+
+     
+
+ third-job:
+
+  runs-on: ubuntu-latest
+
+  needs: [second-job]
+
+  steps:
+
+   - name: Simple shell command step 
+
+    run: echo Hello 
