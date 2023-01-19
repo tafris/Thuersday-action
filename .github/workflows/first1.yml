@@ -1,0 +1,26 @@
+name: FirstName1
+
+
+
+on: 
+
+  workflow_dispatch: # manual way of starting workflows
+
+  
+
+jobs:
+
+  first-job:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Simple shell command step 
+
+        run: echo Hello from Step 1
+
+      - name: Another simple shell command step 
+
+        run: echo Hello from Step 2
+
