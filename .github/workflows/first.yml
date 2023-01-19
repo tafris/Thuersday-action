@@ -1,0 +1,14 @@
+name: Firstname
+
+on: 
+ workflow_dispatch: manu way of workflows
+
+jobs:
+ first-job: 
+  run-on: ubuntu-latest
+  steps: 
+  - name: simple shell command step
+    run: echo Hellon from step1
+    - name: another simple shell
+    run: echo hello from step2
+    
